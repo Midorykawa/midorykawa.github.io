@@ -1,18 +1,15 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
-    background: url('images/hero-bg.jpg') no-repeat center center;
+    background: url('../images/hero-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
-    min-height: 100vh;
     /* Адаптив
     Тест бг */
 }
 
 #hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
-    background-size: cover;
     color: white;
     text-align: center;
 }
@@ -35,9 +32,6 @@ body {
 }
 
 #skills {
-    background: linear-gradient(45deg, #001f3f, #003366, #004c8c, #006699, #0080b3);
-    background-size: 400% 400%;
-    animation: gradientShift 4s ease infinite;
     color: #e0ffff;
 }
 
