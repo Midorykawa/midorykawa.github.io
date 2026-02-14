@@ -1,8 +1,0 @@
-.agent/
-GEMINI.md
-.idea/
-.vscode/
-node_modules/
-*.log
-.DS_Store
-Thumbs.db
