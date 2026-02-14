@@ -1,98 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shira</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Даниил | Portfolio</title>
 
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container text-center">
-            <h1 data-aos="fade-up">Привет, я Даниил</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Начинающий разработчик 1С</p>
-            <a href="#about" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="400">Узнать больше</a>
+    <meta
+      name="description"
+      content="Портфолио Даниила: Разработчик 1С, Web Apps и современных сайтов. Автоматизация бизнеса и современные веб-решения."
+    />
+
+
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-mesh"></div>
+
+    <nav class="navbar" id="navbar">
+      <a href="#" class="navbar-brand">DANII_L</a>
+      <ul class="navbar-nav">
+        <li><a href="#about" class="nav-link">Обо мне</a></li>
+        <li><a href="#skills" class="nav-link">Навыки</a></li>
+        <li><a href="#projects" class="nav-link">Проекты</a></li>
+        <li><a href="#contact" class="nav-link">Контакты</a></li>
+      </ul>
+      <a
+        href="#contact"
+        class="btn-primary"
+        style="padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.9rem"
+        >Связаться</a
+      >
+    </nav>
+
+    <main>
+
+      <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up">
+          <h1>Привет, я Даниил</h1>
+          <p class="hero-subtitle">
+            Создаю эффективные решения на платформе <b>1С</b> и разрабатываю
+            современные <b>Web App</b> и сайты, которые помогают бизнесу расти.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">Посмотреть проекты</a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 data-aos="fade-down">Обо мне</h2>
-                    <p data-aos="fade-up">Я начинающий специалист в сфере разработки на платформе 1С. Увлекаюсь автоматизацией бизнес-процессов и изучаю возможности платформы.</p>
-                </div>
+
+      <section id="about">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Обо мне</h2>
+        </div>
+        <div
+          class="about-content"
+          style="
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--muted-color);
+          "
+          data-aos="fade-up"
+        >
+          <p style="font-size: 1.2rem; margin-bottom: 2rem">
+            Я специализируюсь на автоматизации бизнес-процессов и создании
+            цифровых продуктов. Мой путь начался с платформы 1С, но страсть к
+            технологиям привела меня в мир веб-разработки.
+          </p>
+          <p style="font-size: 1.1rem">
+            Сегодня я объединяю глубокое понимание бизнес-логики с современными
+            веб-стандартами, чтобы создавать инструменты, которые действительно
+            работают.
+          </p>
+        </div>
+      </section>
+
+
+      <section id="skills">
+        <h2 class="section-title" data-aos="fade-up">Что я умею</h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-icon">
+              <i class="fas fa-code-branch fa-2x"></i>
             </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-down">Навыки</h2>
-            <div class="row">
-                <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="skill-card p-4">
-                        <i class="fas fa-code fa-2x"></i>
-                        <h4>1С: Предприятие</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="skill-card p-4">
-                        <i class="fas fa-database fa-2x"></i>
-                        <h4>SQL</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="skill-card p-4">
-                        <i class="fas fa-cogs fa-2x"></i>
-                        <h4>Автоматизация</h4>
-                    </div>
-                </div>
+            <h3>1С: Предприятие</h3>
+            <p>
+              Автоматизация учета, разработка конфигураций и оптимизация
+              бизнес-процессов на платформе 1С.
+            </p>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon">
+              <i class="fas fa-laptop-code fa-2x"></i>
             </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-down">Проекты</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4" data-aos="flip-left">
-                    <div class="project-card card h-100">
-                        <img src="images/placeholder.jpg" class="card-img-top" alt="Проект 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Учет товаров</h5>
-                            <p class="card-text">Модуль для учета остатков на складе.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4" data-aos="flip-right">
-                    <div class="project-card card h-100">
-                        <img src="images/placeholder.jpg" class="card-img-top" alt="Проект 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Зарплатный калькулятор</h5>
-                            <p class="card-text">Расчет заработной платы сотрудников.</p>
-                        </div>
-                    </div>
-                </div>
+            <h3>Web Apps</h3>
+            <p>
+              Разработка интерактивных веб-приложений с использованием
+              современного стека технологий (JavaScript, React/Vue).
+            </p>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon">
+              <i class="fas fa-globe fa-2x"></i>
             </div>
-        </div>
-    </section>
-
-    <section id="contacts" class="py-5 bg-dark text-white">
-        <div class="container text-center">
-            <h2 data-aos="fade-down">Контакты</h2>
-            <div class="social-links mt-4" data-aos="fade-up">
-                <a href="https://github.com/Midorykawa" target="_blank" class="mx-3"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://t.me/Shiiraa_emiya" target="_blank" class="mx-3"><i class="fab fa-telegram fa-2x"></i></a>
+            <h3>Сайты</h3>
+            <p>
+              Создание адаптивных, быстрых и эстетичных лендингов и
+              корпоративных сайтов с фокусом на UX/UI.
+            </p>
+          </div>
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-icon">
+              <i class="fas fa-database fa-2x"></i>
             </div>
+            <h3>SQL & Databases</h3>
+            <p>
+              Проектирование структур данных и написание сложных
+              оптимизированных запросов.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
+
+      <section id="projects">
+        <h2 class="section-title" data-aos="fade-up">Избранные проекты</h2>
+        <div class="projects-grid">
+
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <i class="fas fa-boxes-stacked"></i>
+              <div
+                style="
+                  padding: 2rem;
+                  height: 100%;
+                  display: flex;
+                  align-items: flex-end;
+                "
+              >
+                <h4 style="color: rgba(255, 255, 255, 0.8)">Учет товаров</h4>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">1C</span>
+                <span class="tag">Automation</span>
+              </div>
+              <p style="color: var(--muted-color); margin-bottom: 1.5rem">
+                Полнофункциональный модуль для автоматизированного учета
+                остатков на складах с системой оповещений.
+              </p>
+              <a
+                href="#"
+                class="nav-link"
+                style="color: var(--accent-color); font-weight: 600"
+                >Подробнее <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image">
+              <i class="fas fa-calculator"></i>
+              <div
+                style="
+                  padding: 2rem;
+                  height: 100%;
+                  display: flex;
+                  align-items: flex-end;
+                "
+              >
+                <h4 style="color: rgba(255, 255, 255, 0.8)">
+                  Зарплатный калькулятор
+                </h4>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="tag">1C</span>
+                <span class="tag">Management</span>
+              </div>
+              <p style="color: var(--muted-color); margin-bottom: 1.5rem">
+                Инструмент для сложного расчета заработных плат с учетом KPI,
+                налогов и отпусков.
+              </p>
+              <a
+                href="#"
+                class="nav-link"
+                style="color: var(--accent-color); font-weight: 600"
+                >Подробнее <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
+      <section class="contact-section" id="contact">
+        <h2 class="section-title" data-aos="fade-up">Обсудим ваш проект?</h2>
+        <p
+          style="
+            color: var(--muted-color);
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+          "
+          data-aos="fade-up"
+        >
+          Я всегда открыт для новых идей и интересных задач. Напишите мне в
+          удобном для вас мессенджере.
+        </p>
+        <div class="social-links" data-aos="fade-up" data-aos-delay="200">
+          <a
+            href="https://github.com/Midorykawa"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a
+            href="https://t.me/Shiiraa_emiya"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-telegram fa-2x"></i
+          ></a>
+          <a href="mailto:your-email@example.com" class="social-link"
+            ><i class="fas fa-envelope fa-2x"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Даниил. </p>
+    </footer>
+
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
